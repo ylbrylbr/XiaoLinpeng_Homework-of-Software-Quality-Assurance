@@ -1,0 +1,22 @@
+Why DFT
+CFT is cool, but there are still some problems about Dependency and sequencing. 
+These problems make the test of software uncompleted or too complicated, 
+so that we need for a another way to test our software from a different aspect. 
+That may find other defects in program. 
+DFT(Date Flow Testing) is a technology which can detect problems about data dependency and optimize performance of program. 
+There are two important concepts in DFT. They are Data Flow(Date Dependency) and Data Slice.
+
+Data Operation & Date Flow
+There are two kind of data operation in DFT, Define(D) and Use(U). D mean create, initialize and assign data. 
+And U involve computational and preidcate charactistics of data operations. We should focus on Define and relate Use. 
+There are some method to analysis data dpendency problem. 
+U-U and D-U are ok. And if you found D-D, U-D, there may be some problems in your program, and you should focus on this.
+DFT focuses on testing D-U relations. We can use DDG help us to analysis software.
+
+Data Slice
+Data Slice is another technology to test software. 
+Data slice is data item and all information needed to dertermine it' value. 
+Data slice is use to slice the program into pieces by data usage. 
+So that when bug happens, use data slice can locate the wrong code rapidly. 
+It's usefull but we still need some skill to master it. The most notable thing is sensitization in DFT. 
+There are some priniple we need to follow, and handle correalations/connections carefully.
